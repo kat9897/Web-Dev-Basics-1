@@ -1,0 +1,87 @@
+<html>
+<head>
+</head>
+<body>
+    <style>
+        #container {
+            display: flex;
+            flex-direction: column;
+            background-color: whitesmoke;
+        }
+        #header {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            padding-top: 50px;
+        }
+        #header-title {
+            font-weight: bold;
+            font-size: 25px;
+            padding-bottom: 10px;
+        }
+        #header-subtitle {
+            font-weight: none;
+            color: rgb(139, 133, 133);
+        }
+        .field-title {
+            margin-bottom: 10px;
+            margin-top: 15px;
+        }
+        #message {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+        #message-text {
+            padding-bottom: 100px;
+        }
+        #submit-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #submit-button input {
+            width: 150px;
+            border-radius: 25px;
+            border: none;
+            background-color: springgreen;
+            color: white;
+            padding: 10px;
+            margin-bottom: 50px;
+        }
+        input {
+            width: 100vw;
+            border: 1px rgb(139, 133, 133) solid;
+            border-radius: 3px;
+            padding: 5px;
+        }
+    </style>
+    <div id="container">
+        <div id="header">
+            <div id="header-title">CONTACT US</div>
+            <div id="header-subtitle">We are very responsive!
+                Feel free to send us a message</div>
+        </div>
+        <form action="form.html" method="POST">
+            <div class="field-title">Name:</div>
+            <input type="text" placeholder="Alice Lee" />
+            
+            <div class="field-title">Email:</div>
+            <input type="text" placeholder="alice-lee@gmail.com" />
+            
+            <div class="field-title">Phone Number:</div>
+            <input type="text" placeholder="+1-647-998-6453" />
+            
+            <div class="field-title" id="message">Message:<br><br>
+                <input id="message-text" type="text" placeholder="I would like to check out the blinds!" />
+            </div>
+            <div id="submit-button">
+                <input type="submit" value="SEND MESSAGE"/>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
