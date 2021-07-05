@@ -1,0 +1,68 @@
+<html>
+<head>
+</head>
+<body>
+    <style>
+        #container {
+            display: flex;
+            flex-direction: column;
+        }
+        #header {
+            background-color: red;
+            font-size: 40pt;
+            padding-bottom: 30pt;
+            margin: 0 auto;
+            width: 100vw;
+        }
+        #middle {
+            display: flex;
+            flex-direction: row;
+        }
+        #left-side {
+            background-color: pink;
+            width: 100vw;
+        }
+        #left-text {
+            align-items: flex-start;
+            padding-bottom: 200px;
+            padding-left: 10px;
+        }
+        #content {
+            background-color: yellow;
+            width: 100vw;
+        }
+        #content-text {
+            align-items: flex-start;
+            padding-left: 15px;
+        }
+        #right-side {
+            background-color: aqua;
+            padding: 5px;
+            width: 100pt;
+        }
+        #right-text {
+            margin: 0px;
+        }
+        #footer {
+            background-color: violet;
+        }
+    </style>
+    <div id="container">
+        <h1 id="header">Header (70pt)</h1>
+        <div id="middle">
+            <div id="left-side">
+                <p id="left-text">LSide<br>(auto)</p>
+            </div>
+            <div id="content">
+                <h2 id="content-text">Content (expands)</h2>
+            </div>
+            <div id="right-side">
+                <p id="right-text">RSide (100 pt)</p>
+            </div>
+        </div>
+        <div id="footer">
+            <h3>Footer (auto)</h3>
+        </div>
+    </div>
+</body>
+</html>
